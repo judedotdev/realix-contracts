@@ -20,6 +20,7 @@
     "flatten": "npx hardhat flatten",
     "flatten:realix": "npx hardhat flatten contracts/Realix.sol > flattened/RealixFlattened.sol",
     "help": "npx hardhat help",
+    "identifyVars": "npx hardhat vars setup",
     "node": "npx hardhat node",
     "run": "npx hardhat run",
     "test": "npx hardhat test",
