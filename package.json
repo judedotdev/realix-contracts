@@ -1,0 +1,29 @@
+{
+  "name": "realix-contracts",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "hardhat": "^2.22.8",
+    "viem": "^2.19.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  },
+  "scripts": {
+    "check": "npx hardhat check",
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "console": "npx hardhat console",
+    "coverage": "npx hardhat coverage",
+    "deploy": "npx hardhat run scripts/deploy.ts",
+    "deploy:localhost": "npx hardhat run --network localhost scripts/deploy.ts",
+    "deploy:assetChainTestnet": "npx hardhat run --network assetChainTestnet scripts/deploy.ts",
+    "flatten": "npx hardhat flatten",
+    "flatten:realix": "npx hardhat flatten contracts/Realix.sol > flattened/RealixFlattened.sol",
+    "help": "npx hardhat help",
+    "node": "npx hardhat node",
+    "run": "npx hardhat run",
+    "test": "npx hardhat test",
+    "typechain": "npx hardhat typechain",
+    "verify": "npx hardhat verify"
+  }
+}
