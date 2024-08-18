@@ -11,6 +11,22 @@ async function main() {
     Initial Supply: ${new Intl.NumberFormat().format(Number(formatEther(initialSupply)))} RLX
     `
   );
+
+  const marketplace = await hre.viem.deployContract("Marketplace");
+  console.log(
+    `
+    Marketplace Contract successfully deployed!
+    Contract Address: ${marketplace.address}
+    `
+  );
+
+  const vendorFactory = await hre.viem.deployContract("VendorFactory");
+  console.log(
+    `
+    VendorFactory Contract successfully deployed!
+    Contract Address: ${vendorFactory.address}
+    `
+  );
 }
 
 // We recommend this pattern to be able to use async/await everywhere

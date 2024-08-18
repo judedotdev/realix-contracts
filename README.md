@@ -18,3 +18,13 @@ npx hardhat node
 npx hardhat run scripts/deploy.ts
 SOLIDITY_COVERAGE=true npx hardhat coverage
 ```
+
+## Deployment addresses
+
+### Testnets
+
+1) AssetChain Testnet
+   - Marketplace: `0x39c09f2d279403cff18def4d3dfda83904363927`
+   - VendorFactory: `0xee2fbb7edfa6f47014adebb62acc610cf1b94c4c`
+   - Vendor: `0x2cbbb05720bc1b368dcb9aed07b38bd209f9f496`
+   - Realix: `0x8862c93C38850f69d10721322201d9E9b1255CfB`
