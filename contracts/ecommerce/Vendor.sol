@@ -15,9 +15,10 @@ contract Vendor is ERC721, Ownable {
     /// @param _factory The address of the VendorFactory contract
     constructor(
         address _factory,
+        address _collectionOwner,
         string memory name,
         string memory symbol
-    ) ERC721(name, symbol) Ownable(msg.sender) {
+    ) ERC721(name, symbol) Ownable(_collectionOwner) {
         factory = _factory;
         tokenCounter = 0;
     }

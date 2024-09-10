@@ -28,6 +28,6 @@ npx hardhat verify --network assetChainTestnet CONTRACT_ADDRESS "ARG1" "ARG2" "A
 
 1) AssetChain Testnet
    - Marketplace: `0x8de25645104C3151ad9A8cDF6bC651301d9Ab48F`
-   - VendorFactory: `0xeF3A94d28467f66A7A18fE321fc75B8F70dDbd5a`
-   - Vendor: `0x2cbbb05720bc1b368dcb9aed07b38bd209f9f496`
+   - VendorFactory: `0x5E9d19cd67e5f66848a940681bAe2aC9DDe882a1`
+   - Vendor: `0x34Ec81E70e0CE648758D25Ff7bE3C18816017B87`
    - Realix: `0xE8b60c36c45AD67BaBaa757edbE065e6659d2452`

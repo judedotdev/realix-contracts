@@ -17,9 +17,15 @@ contract VendorFactory {
         string memory name,
         string memory symbol
     ) public returns (address collectionAddress) {
-        Vendor newCollection = new Vendor(msg.sender, name, symbol);
-        sellerCollections[msg.sender].push(address(newCollection));
-        emit CollectionCreated(msg.sender, address(newCollection));
+        address collectionOwner = msg.sender;
+        Vendor newCollection = new Vendor(
+            address(this),
+            collectionOwner,
+            name,
+            symbol
+        );
+        sellerCollections[collectionOwner].push(address(newCollection));
+        emit CollectionCreated(collectionOwner, address(newCollection));
         return address(newCollection);
     }
 }
