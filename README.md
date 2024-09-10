@@ -17,6 +17,9 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.ts
 SOLIDITY_COVERAGE=true npx hardhat coverage
+npx hardhat verify --network <network-name> <address>
+npx hardhat verify --network assetChainTestnet <RealixAddress> "initialSupply"
+npx hardhat verify --network assetChainTestnet CONTRACT_ADDRESS "ARG1" "ARG2" "ARG3"
 ```
 
 ## Deployment addresses
@@ -24,7 +27,7 @@ SOLIDITY_COVERAGE=true npx hardhat coverage
 ### Testnets
 
 1) AssetChain Testnet
-   - Marketplace: `0x39c09f2d279403cff18def4d3dfda83904363927`
-   - VendorFactory: `0xee2fbb7edfa6f47014adebb62acc610cf1b94c4c`
+   - Marketplace: `0x8de25645104C3151ad9A8cDF6bC651301d9Ab48F`
+   - VendorFactory: `0xeF3A94d28467f66A7A18fE321fc75B8F70dDbd5a`
    - Vendor: `0x2cbbb05720bc1b368dcb9aed07b38bd209f9f496`
-   - Realix: `0x8862c93C38850f69d10721322201d9E9b1255CfB`
+   - Realix: `0xE8b60c36c45AD67BaBaa757edbE065e6659d2452`

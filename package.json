@@ -2,6 +2,7 @@
   "name": "realix-contracts",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.10",
     "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^9.1.0",
     "ethers": "^6.13.2",
@@ -22,12 +23,13 @@
     "deploy:localhost": "npx hardhat run --network localhost scripts/deploy.ts",
     "flatten": "npx hardhat flatten",
     "flatten:realix": "npx hardhat flatten contracts/Realix.sol > flattened/RealixFlattened.sol",
+    "hardhat-verify": "npx hardhat verify",
     "help": "npx hardhat help",
     "identifyVars": "npx hardhat vars setup",
     "node": "npx hardhat node",
     "run": "npx hardhat run",
     "test": "npx hardhat test",
     "typechain": "npx hardhat typechain",
-    "verify": "npx hardhat verify"
+    "verify": "npx hardhat --network assetChainTestnet etherscan-verify --solc-input"
   }
 }
